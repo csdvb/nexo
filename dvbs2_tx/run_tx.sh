@@ -13,4 +13,4 @@ MPTSD_NIT=$PREFIX/mptsd_nit.conf
     -g $MPTSD_CONF -c $MPTSD_CHAN -e $MPTSD_EPG -n $MPTSD_NIT &
 
 export VOLK_CONFIGPATH=/usr/local/etc
-/usr/local/bin/dvbs2_tx -u &
+/usr/local/bin/dvbs2_tx -u -b 7M -g 30 &
