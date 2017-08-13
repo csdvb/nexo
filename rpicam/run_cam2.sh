@@ -1,4 +1,10 @@
 #!/bin/sh
+#
+# Copy the avc2ts binary and this script to /usr/local/bin, and add
+# the following line to /etc/rc.local:
+#
+#   /usr/local/bin/run_cam2.sh &
+#
 
 TARGET_IP=10.0.0.254
 TARGET_PORT=42002
