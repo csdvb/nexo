@@ -1,0 +1,26 @@
+From b719a2cb480a75872645bfeb115f2229305fa06c Mon Sep 17 00:00:00 2001
+From: Alexandru Csete <oz9aec@gmail.com>
+Date: Sun, 20 Aug 2017 15:50:22 +0200
+Subject: [PATCH] Disable WORKAROUND_GR_HIER_BLOCK2_BUG
+
+Allows catching exceptions in the application.
+---
+ lib/sink_impl.cc | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/lib/sink_impl.cc b/lib/sink_impl.cc
+index 285638b..65a5681 100644
+--- a/lib/sink_impl.cc
++++ b/lib/sink_impl.cc
+@@ -59,7 +59,7 @@
+ 
+ /* This avoids throws in ctor of gr::hier_block2, as gnuradio is unable to deal
+  with this behavior in a clean way. The GR maintainer Rondeau has been informed. */
+-#define WORKAROUND_GR_HIER_BLOCK2_BUG
++//#define WORKAROUND_GR_HIER_BLOCK2_BUG
+ 
+ /*
+  * Create a new instance of sink_impl and return
+-- 
+2.7.4
+
