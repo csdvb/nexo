@@ -1,3 +1,3 @@
 #!/bin/sh
 
-pkill --term mptsd
+pkill -term mptsd

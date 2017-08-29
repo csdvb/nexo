@@ -1,3 +1,3 @@
 #!/bin/sh
 
-pkill --term dvbs2_tx
+pkill -term dvbs2_tx
